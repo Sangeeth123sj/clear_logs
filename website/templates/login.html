@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+{% endblock %}
+{% block body %}
+
+<div class="subheader">
+	login page
+</div>
+
+	
+<form method="POST">
+	<div class="form-group">
+		<div class="container">
+			<label for="exampleInputEmail1">Email address</label>
+			<div class="col-xs-4">
+				<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="container">
+			<label for="exampleInputPassword1">Password</label>
+			<div class="col-xs-2">
+				<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group form-check">
+		<div class="container">
+			<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<div class="col-xs-2">
+					<label class="form-check-label" for="exampleCheck1" style="color: aliceblue;">Check me out</label>
+				</div>
+		</div>
+	</div>
+				
+	<div class="container">
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+
+</form>
+
+{% endblock %}
